@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
 // sino puede pasar que esperemos datos que aun no hemos cargado en la activity.
         contexto = this;
 
-        Button boton = (Button)findViewById(R.id.botonMain);
+        Button botonDialog = (Button)findViewById(R.id.botonMain);
         final Button botonShapes = (Button)findViewById(R.id.buttonShapes);
 
-        boton.setOnClickListener(new View.OnClickListener() {
+        botonDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
