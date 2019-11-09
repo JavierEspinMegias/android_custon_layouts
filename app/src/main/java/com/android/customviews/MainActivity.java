@@ -2,8 +2,11 @@ package com.android.customviews;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -19,10 +22,16 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        checkStyle();
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         textoImportado = (TextView)findViewById(R.id.textView);
+
+
 
 // Se inicializa contexto una vez cargada la activity
 // De esta manera podemos manejar datos a tiempo real y asi poder acceder a bases de datos(por ejemplo con un Servicio)
@@ -40,7 +49,6 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
                 new DialogoEntradaSalida(contexto, MainActivity.this);
             }
         });
-
 
 
         botonShapes.setOnClickListener(new View.OnClickListener() {
@@ -76,8 +84,35 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
         startActivity(new Intent(this, SliderBlur.class));
     }
 
-    //Cambiar estilo de Theme
-    public void cambiarEstilo(){
-        this.setTheme(R.style.AppThemeDark);
+    // Ir a slider
+    public void changeStyle(View v){
+        SharedPreferences sharedPref = getSharedPreferences("themePreferences", Context.MODE_PRIVATE);
+        String themeGuardada = sharedPref.getString("themePreferences", "");
+        SharedPreferences.Editor editor = sharedPref.edit();
+
+
+        if (themeGuardada.equals("")){
+            editor.putString("themePreferences", "mod");
+            editor.apply();
+            this.setTheme(R.style.AppThemeModificada);
+
+        }else{
+            editor.putString("themePreferences", "");
+            editor.apply();
+            this.setTheme(R.style.AppTheme);
+        }
+        recreate();
+
+    }
+
+
+    // Checkear shared si tenemos algun estilo elegido
+    public void checkStyle(){
+        SharedPreferences sharedPref = getSharedPreferences("themePreferences", Context.MODE_PRIVATE);
+        String themeGuardada = sharedPref.getString("themePreferences", "");
+        if (!themeGuardada.equals("")){
+            this.setTheme(R.style.AppThemeModificada);
+        }
+
     }
 }

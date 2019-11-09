@@ -10,6 +10,7 @@
         android:id="@+id/botonMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:text="DIALOG"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -71,6 +72,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Button"
+        android:backgroundTint="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_weight="0.3"
         app:layout_constraintEnd_toStartOf="@+id/button3"
@@ -82,6 +84,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="79dp"
         android:text="Button"
+        android:backgroundTint="@color/colorPrimary"
         app:layout_constraintHorizontal_weight="0.3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,6 +96,7 @@
         android:layout_height="wrap_content"
         android:text="Slider"
         android:onClick="goSlider"
+        android:backgroundTint="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,10 +107,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cambiar App Theme"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="cambiarEstilo"/>
+        android:onClick="changeStyle"/>
 
 
 </android.support.constraint.ConstraintLayout>
