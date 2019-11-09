@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <Button
         android:id="@+id/botonMain"
         android:layout_width="wrap_content"
@@ -37,9 +36,9 @@
         android:id="@+id/buttonShapes"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Estilos"
         android:layout_margin="12dp"
         android:background="@drawable/custom_button_circle"
+        android:text="Estilos"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,18 +53,39 @@
         app:layout_constraintGuide_begin="210dp" />
 
     <LinearLayout
+        android:id="@+id/linearBotones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:id="@+id/linearBotones"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonMain"
-        android:orientation="horizontal">
+        app:layout_constraintTop_toBottomOf="@+id/botonMain">
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="79dp"
+        android:text="Button"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
 
 
 </android.support.constraint.ConstraintLayout>
