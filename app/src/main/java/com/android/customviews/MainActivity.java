@@ -1,6 +1,7 @@
 package com.android.customviews;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -67,5 +68,11 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
     @Override
     public void resultadoCuadro(String dato) {
         textoImportado.setText(dato);
+    }
+
+
+    // Ir a slider
+    public void goSlider(View v){
+        startActivity(new Intent(this, SliderBlur.class));
     }
 }
