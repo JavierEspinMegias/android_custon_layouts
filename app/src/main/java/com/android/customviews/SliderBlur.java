@@ -10,7 +10,7 @@ import java.sql.Time;
 
 public class SliderBlur extends AppCompatActivity {
 
-    public ImageView imagenFondo;
+    public LinearLayout linearImagen;
     public int i = 0;
     final int[] imagenes = new int[]{R.drawable.photo1, R.drawable.photo2, R.drawable.photo3};
 
@@ -19,7 +19,7 @@ public class SliderBlur extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slider_blur);
 
-        imagenFondo = (ImageView) findViewById(R.id.imageView2);
+        linearImagen = (LinearLayout) findViewById(R.id.linearSlider);
 
 
         t.start();
@@ -36,7 +36,7 @@ public class SliderBlur extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            imagenFondo.setImageResource(imagenes[i]);
+                            linearImagen.setBackgroundResource(imagenes[i]);
                             i++;
                             if(i >= imagenes.length){
                                 i = 0;

@@ -75,4 +75,9 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
     public void goSlider(View v){
         startActivity(new Intent(this, SliderBlur.class));
     }
+
+    //Cambiar estilo de Theme
+    public void cambiarEstilo(){
+        this.setTheme(R.style.AppThemeDark);
+    }
 }
