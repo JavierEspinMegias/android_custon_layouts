@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
             @Override
             public void onClick(View v) {
                 int random =  1 + (int)(Math.random() * 3);
-                Toast.makeText(contexto, ""+random, Toast.LENGTH_SHORT).show();
                 switch (random){
                     case 1:
                         botonShapes.setBackground(getDrawable(R.drawable.custom_buttom_gradient));
