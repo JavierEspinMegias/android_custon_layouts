@@ -113,6 +113,5 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
         if (!themeGuardada.equals("")){
             this.setTheme(R.style.AppThemeModificada);
         }
-
     }
 }
