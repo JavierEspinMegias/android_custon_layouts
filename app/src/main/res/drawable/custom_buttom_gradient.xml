@@ -4,8 +4,9 @@
 
     <gradient android:startColor="@android:color/holo_orange_light"
         android:centerColor="@color/colorPrimary"
-        android:endColor="@android:color/holo_blue_dark"
-        android:angle="45"/>
-    <corners android:radius="6dp"/>
+        android:endColor="@android:color/holo_orange_light"
+        android:angle="45"
+        android:type="sweep"/>
+    <corners android:radius="12dp"/>
 
 </shape>
