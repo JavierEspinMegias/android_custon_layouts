@@ -1,2 +1,2 @@
 ------------- Ejemplo practico de introduccion a interfaces graficas en Android Studio
-------------- Version 2 --------------------------------------------------------------
+------------- Version Master--------------------------------------------------------------
