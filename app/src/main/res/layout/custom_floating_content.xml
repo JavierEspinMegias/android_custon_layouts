@@ -4,19 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textview_example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="100dp"
-        android:background="#212121"
-        android:padding="8dp"
-        android:text="Share"
-        android:textColor="#ffffff"
-        android:visibility="invisible" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab3"
@@ -24,8 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="81dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="103dp"
         android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:elevation="16dp"
@@ -35,6 +22,19 @@
         app:pressedTranslationZ="12dp"
         app:srcCompat="@drawable/ic_menu_gallery" />
 
+    <TextView
+        android:id="@+id/textview_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="114dp"
+        android:background="@drawable/custom_buttom_shape"
+        android:padding="8dp"
+        android:text="Example"
+        android:textColor="#1A1A1A"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/textview_share"
@@ -43,11 +43,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="154dp"
-        android:background="#212121"
+        android:layout_marginBottom="197dp"
+        android:background="@drawable/custom_buttom_shape"
         android:padding="8dp"
-        android:text="Share"
-        android:textColor="#ffffff"
+        android:text="Example"
+        android:textColor="#1A1A1A"
         android:visibility="invisible" />
 
     <android.support.design.widget.FloatingActionButton
@@ -57,7 +57,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginBottom="132dp"
         android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:elevation="16dp"
@@ -67,28 +67,14 @@
         app:pressedTranslationZ="12dp"
         app:srcCompat="@drawable/ic_menu_share" />
 
-    <TextView
-        android:id="@+id/textview_mail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="44dp"
-        android:background="#212121"
-        android:padding="8dp"
-        android:text="Email"
-        android:textColor="#ffffff"
-        android:visibility="invisible" />
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="81dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="33dp"
         android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:elevation="16dp"
@@ -97,6 +83,20 @@
         app:backgroundTint="#ffffff"
         app:pressedTranslationZ="12dp"
         app:srcCompat="@drawable/ic_menu_send" />
+
+    <TextView
+        android:id="@+id/textview_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/custom_buttom_shape"
+        android:padding="8dp"
+        android:text="Example"
+        android:textColor="#1A1A1A"
+        android:visibility="invisible" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
