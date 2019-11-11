@@ -24,4 +24,5 @@
         <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:padding">12dp</item>
     </style>
+
 </resources>

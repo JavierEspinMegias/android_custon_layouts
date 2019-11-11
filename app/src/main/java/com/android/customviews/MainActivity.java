@@ -3,15 +3,11 @@ package com.android.customviews;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements DialogoEntradaSalida.enviaDatos{
 
@@ -81,6 +77,12 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
     // Ir a slider
     public void goSlider(View v){
         startActivity(new Intent(this, SliderBlur.class));
+    }
+
+
+    // Ir a loader
+    public void goLoader(View v){
+        startActivity(new Intent(this, CustomLoader.class));
     }
 
     // Ir a slider
