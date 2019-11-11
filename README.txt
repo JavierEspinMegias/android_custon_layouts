@@ -1,11 +1,9 @@
-------------- Ejemplo practico de introduccion a interfaces graficas en Android Studio
-------------- Version Master--------------------------------------------------------------
-
+Ejemplo practico de introduccion a interfaces graficas en Android Studio
 
 - Implementaciones:
 
-  - LinearLayout image slider
-  - Random Button predesigned styles
-  - Custom Dialog component
-  - Custom Loader icon
-  - Custom app theme changer
+  - LinearLayout se comporta como Slider de imagenes.
+  - Boton aleatorio con estilos predisenyados.
+  - Componente Dialog customizado.
+  - Componente Icon Loader customizado.
+  - Cambiador de Theme customizado.
