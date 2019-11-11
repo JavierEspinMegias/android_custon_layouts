@@ -79,6 +79,11 @@ public class MainActivity extends AppCompatActivity implements DialogoEntradaSal
         startActivity(new Intent(this, SliderBlur.class));
     }
 
+    // Ir a floating
+    public void goFloating(View v){
+        startActivity(new Intent(this, FloatingCustomButton.class));
+    }
+
 
     // Ir a loader
     public void goLoader(View v){
